@@ -1,8 +1,8 @@
    <template>
-    <div class="container px-4 py-12 mx-auto transition scale-50 opacity-0 sm:px-6 lg:px-8 sm:py-16 lg:py-20 intersect:scale-100 intersect:opacity-100" id="project">
+    <div class="container px-4 py-12 mx-auto transition scale-50 opacity-0 sm:px-6 lg:px-8 sm:py-16 lg:py-20 " id="project">
       <h1 class="mb-12 text-3xl font-bold text-left sm:text-4xl lg:text-5xl ">Projects</h1>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 ">
-        <div class="overflow-hidden bg-white shadow-lg rounded-xl">
+        <div class="overflow-hidden transition duration-700 scale-50 bg-white shadow-lg opacity-0 rounded-xl intersect:scale-100 intersect:opacity-100">
           <div class="flex flex-col">
             <div class="overflow-hidden rounded-t-xl">
               <NuxtLink :to="projectLink1">
@@ -19,7 +19,7 @@
           </div>
         </div>
   
-        <div class="overflow-hidden bg-white shadow-lg rounded-xl ">
+        <div class="overflow-hidden transition duration-700 scale-50 bg-white shadow-lg opacity-0 rounded-xl intersect:scale-100 intersect:opacity-100 lg:delay-200">
           <div class="flex flex-col">
             <div class="overflow-hidden rounded-t-xl">
               <NuxtLink :to="projectLink2">
