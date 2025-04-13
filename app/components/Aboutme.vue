@@ -25,7 +25,7 @@
   
         <div class="flex flex-col items-start gap-8 mb-16 lg:flex-row lg:gap-16 lg:mb-24 intersect:motion-preset-slide-up motion-delay-100">
           <div class="flex-1">
-            <h2 class="mb-4 text-2xl font-semibold sm:text-3xl">Pendidikan</h2>
+            <h2 class="mb-4 text-2xl font-semibold sm:text-3xl">Education</h2>
             <p class="mb-4 font-medium text-gray-700">{{ school }}</p>
             <ul class="space-y-2 text-gray-600 list-disc list-inside">
               <li v-for="(item, index) in details" :key="index" class="text-base sm:text-lg">
