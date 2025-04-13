@@ -1,0 +1,115 @@
+  /* assets/css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ff: "Poppins", sans-serif;
+  
+  --h1: bold 1.6rem/1.4em var(--ff);
+  --h2: bold 1rem/1.4em var(--ff);
+  --p: 1rem/1.4em var(--ff);
+  --p2: 0.875rem/1.4em var(--ff);
+  --button: 1rem/1.4em var(--ff);
+  
+  --gray100: hsl(0, 0%, 10%);
+  --gray70: hsl(0, 0%, 20%);
+  --gray0: hsl(0, 0%, 100%);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.scroll {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--gray0);
+    color: var(--gray70);
+    font-family: var(--ff);
+  }
+  
+  .head {
+    font: bold 2.6rem/1.4em var(--ff);
+    color: var(--gray100);
+  }
+
+  h1 {
+    font: var(--h1);
+    color: var(--gray100);
+  }
+
+  h2 {
+    font: var(--h2);
+    color: var(--gray100);
+  }
+
+  p {
+    font: var(--p);
+    color: var(--gray70);
+  }
+
+  button h2 {
+    color: var(--gray0);
+  }
+
+  .subtext {
+    font: var(--p2);
+    color: var(--gray70);
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
