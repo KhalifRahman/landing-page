@@ -1,7 +1,7 @@
    <template>
-    <div class="relative w-full overflow-hidden intersect:motion-preset-fade" :id="id">
+    <div class="relative w-full overflow-hidden" :id="id">
       <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
-      <div class="container px-4 py-12 mx-auto sm:px-6 lg:px-24 sm:py-16 lg:py-20">
+      <div class="container px-4 py-12 mx-auto transition scale-50 opacity-0 sm:px-6 lg:px-24 sm:py-16 lg:py-20 intersect:scale-100 intersect:opacity-100">
         <h1 class="mb-12 text-3xl font-bold text-left sm:text-4xl lg:text-5xl ">About Me</h1>
         
         <div class="flex flex-col items-center gap-8 mb-16 lg:flex-row lg:gap-16 lg:mb-24 ">
